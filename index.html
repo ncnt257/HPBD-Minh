@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
-    <title>Chúc mừng sinh nhật Minh tóc vàng!!! 😼 </title>
+    <title>Minh tóc vàng ơiii, Chúc mừng sinh nhật!!! 😼 </title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+    
         @keyframes pawAnimation {
             0% { opacity: 0; transform: scale(0.8); }
             50% { opacity: 1; transform: scale(1.1); }
             100% { opacity: 0; transform: scale(0.8); }
         }
-
+    
         body {
             font-family: 'Arial', sans-serif;
             background: #fff6f6;
@@ -27,7 +27,7 @@
             background-size: 20px 20px;
             background-position: 0 0, 10px 10px;
         }
-
+    
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -35,27 +35,28 @@
             text-align: center;
             position: relative;
         }
-
+    
         .header {
             margin: 20px 0;
             position: relative;
         }
-
+    
         h1 {
-            font-size: 3em;
+            font-size: 2.5rem;
             color: #ff7d7d;
             text-shadow: 2px 2px 0px #fff;
             margin: 20px 0;
             letter-spacing: 2px;
             font-family: 'Comic Sans MS', cursive;
+            font-weight: bold;
         }
-
+    
         .cat-container {
             position: relative;
             margin: 40px auto;
             max-width: 600px;
         }
-
+    
         .photo-frame {
             background: white;
             padding: 15px;
@@ -65,27 +66,28 @@
             transition: transform 0.3s ease;
             margin-bottom: 5rem;
         }
-
+    
         .photo-frame:hover {
             transform: translateY(-5px);
         }
-
+    
         .photo-frame img {
             max-width: 100%;
             border-radius: 10px;
             margin-bottom: 10px;
         }
-
+    
         .photo-frame p {
             margin-top: 10px;
-            font-size: 1.2em;
+            font-size: 1.2rem;
             color: #ff7d7d;
             font-family: 'Comic Sans MS', cursive;
+            font-weight: bold;
         }
-
+    
         .cat-button {
             padding: 15px 30px;
-            font-size: 1.2em;
+            font-size: 1.2rem;
             margin: 10px;
             cursor: pointer;
             background: #fff;
@@ -94,16 +96,17 @@
             color: #ff7d7d;
             font-family: 'Comic Sans MS', cursive;
             transition: all 0.3s ease;
-            box-shadow: 0 3px 10px rgba(255,125,125,0.2);
+            box-shadow: 0 3px 10px rgba(255, 125, 125, 0.2);
             position: relative;
+            font-weight: bold;
         }
-
+    
         .cat-button:hover {
             background: #ff7d7d;
             color: #fff;
             transform: translateY(-3px);
         }
-
+    
         .cat-button:hover:before {
             content: '🐾';
             position: absolute;
@@ -112,7 +115,7 @@
             transform: translateY(-50%);
             animation: pawAnimation 1s infinite;
         }
-
+    
         .message-box {
             background: rgba(255, 255, 255, 0.9);
             border-radius: 15px;
@@ -121,23 +124,16 @@
             text-align: center;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             font-family: 'Comic Sans MS', cursive;
+            font-size: 1rem;
+            font-weight: bold;
         }
-
+    
         .message-box img {
             max-width: 300px;
             border-radius: 10px;
             margin: 10px auto;
         }
-
-        .message-box:before {
-            content: '🐱';
-            font-size: 2em;
-            position: absolute;
-            top: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
+    
         .cat-paws {
             position: fixed;
             width: 100%;
@@ -145,63 +141,75 @@
             pointer-events: none;
             z-index: 1;
         }
-
+    
         .paw {
             position: absolute;
             font-size: 20px;
             animation: pawFloat 3s linear infinite;
             opacity: 0;
         }
-
+    
         @keyframes pawFloat {
             0% { transform: translateY(0) rotate(0); opacity: 0; }
             10% { opacity: 1; }
             90% { opacity: 1; }
             100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
         }
-
-        .cat-ears {
-            position: absolute;
-            top: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 3em;
-            color: #ff7d7d;
-        }
-
+    
         .bouncing-cat {
             font-size: 5em;
             margin: 20px 0;
             animation: bounce 2s infinite;
             display: inline-block;
         }
-
+    
         @keyframes bounce {
             0%, 100% { transform: translateY(0) rotate(0deg); }
             50% { transform: translateY(-20px) rotate(10deg); }
         }
-
+    
         .cat-footer {
             margin-top: 40px;
             font-size: 2em;
         }
-
+    
         .whiskers {
             position: absolute;
             font-size: 1.5em;
             color: #ff7d7d;
         }
-
+    
         .whiskers.left {
             left: 20px;
             transform: rotate(-30deg);
         }
-
+    
         .whiskers.right {
             right: 20px;
             transform: rotate(30deg);
         }
+    
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+    
+            .photo-frame p, 
+            .cat-button {
+                font-size: 1rem;
+            }
+    
+            .message-box {
+                font-size: 0.9rem;
+            }
+    
+            .cat-footer {
+                font-size: 1.5rem;
+            }
+        }
     </style>
+    
 </head>
 <body>
     <div class="cat-paws" id="paws"></div>
