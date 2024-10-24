@@ -22,9 +22,7 @@
             background: #fff6f6;
             color: #4a4a4a;
             overflow-x: hidden;
-            background-image: 
-                radial-gradient(#ffcdd2 1px, transparent 1px),
-                radial-gradient(#ffcdd2 1px, transparent 1px);
+            background: linear-gradient(135deg, #e0f7ff 0%, #87CEEB 100%);
             background-size: 20px 20px;
             background-position: 0 0, 10px 10px;
         }
@@ -68,6 +66,7 @@
             position: relative;
             transition: transform 0.3s ease;
             cursor: pointer;
+            width: 500px;
         }
 
         .photo-frame:before {
@@ -129,13 +128,18 @@
         }
 
         .message-box {
-            background: #fff;
-            padding: 30px;
-            border-radius: 20px;
-            margin: 40px auto;
-            max-width: 500px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            position: relative;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .message-box img {
+            max-width: 300px;
+            border-radius: 10px;
+            margin: 10px auto;
         }
 
         .message-box:before {
@@ -222,7 +226,9 @@
         </div>
 
         <div class="message-box">
+            <img src="assets/min.jpg" alt="Meow Memory 1">
             <p style="font-size: 1.3em; line-height: 1.6;">
+
                 Minh tóc vàng ơiii! 😺<br>
                 Chóng có bồ nhé!<br>
                 Meoww! 🐱✨
@@ -231,21 +237,29 @@
 
         <div class="cat-container">
             <div class="photo-frame">
-                <img src="/api/placeholder/200/200" alt="Meow Memory 1">
-                <p>Purr-fect Friends! 😺</p>
+                <img src="assets/lin.jpg" alt="Meow Memory 1">
+                <p>Chúc Minh sinh nhật vui vẻ, tiền đầy ví, gái vây quanh và luôn may mắn thành công! </br>- from Lin🌝 - 😺</p>
             </div>
             <div class="photo-frame">
-                <img src="/api/placeholder/200/200" alt="Meow Memory 2">
-                <p>Feline Good! 🐱</p>
+                <img src="assets/thuyanh.jpg" alt="Meow Memory 2">
+                <p>Chúc anh Minh thật là dàng tươi. Thi đâu ăn đó, sớm đạt KPI. Sang năm sớm có ngừ eo </br>- from 🐆 con - 🐱</p>
             </div>
             <div class="photo-frame">
-                <img src="/api/placeholder/200/200" alt="Meow Memory 3">
-                <p>Cat-ching Memories! 😸</p>
+                <img src="assets/tung.jpg" alt="Meow Memory 3">
+                <p>Người thật tế như em chỉ biết chúc anh Minh sớm có tình iu, lương tăng phơi phới thôi nhớ </br>- from tungncn 😼 - 😸</p>
+            </div>
+            <div class="photo-frame">
+                <img src="assets/hiep.jpg" alt="Meow Memory 4">
+                <p>Chúc anh Minh 8386, sớm GIÀU! </br>- from Ông bố 5 con 😽😽😽😽😽- 😸</p>
+            </div>
+            <div class="photo-frame">
+                <img src="assets/linh.jpg" alt="Meow Memory 5">
+                <p>Chúc anh Minh sinh nhật vui vẻ :3 </br>- from Lin 🌚 - 😸</p>
             </div>
         </div>
 
-        <button class="cat-button" onclick="spawnPaws()">Spread Paw-sitivity! 🐾</button>
-        <button class="cat-button" onclick="playBirthdaySong()">Meow-sical Birthday! 🎵</button>
+        <!-- <button class="cat-button" onclick="spawnPaws()">Lắng nghe lời chúc! 🐾</button> -->
+        <button class="cat-button" onclick="playBirthdaySong()">Nghe nhạc sinh nhật nè! 🎵</button>
 
         <div class="cat-footer">
             🐟 🧶 🐠 🎀 🐟
@@ -269,7 +283,7 @@
         }
 
         function playBirthdaySong() {
-            const audio = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
+            const audio = new Audio('assets/happy-birthday-my-kitty-120918.mp3');
             audio.play();
         }
 
